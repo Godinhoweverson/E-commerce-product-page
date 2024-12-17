@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Colors */
+
+:root{
+
+    /* Primary */
+
+-Orange: hsl(26, 100%, 55%);
+-Pale-orange: hsl(25, 100%, 94%);
+
+ /* Neutral */
+
+-Very-dark-blue: hsl(220, 13%, 13%);
+-Dark-grayish-blue: hsl(219, 9%, 45%);
+-Grayish-blue: hsl(220, 14%, 75%);
+-Light-grayish-blue: hsl(223, 64%, 98%);
+-White: hsl(0, 0%, 100%);
+
+/* with 75% opacity for lightbox background */
+-Black: hsl(0, 0%, 0%);
+}
+
+body{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 77%;
+    height: 0.6%;
+}
+
+.brand-name{
+    width: 20%;
+
+}
+
+.pages{
+    width: 40%;
+    height: 100%;
+}
+
+.pages ul{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+   
+    width: 100%;
+}
+
+
+
+.customer-details{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 77%;
+    height: 84%;  
+    border-top: 1px solid black;
+    margin-top: 38px;
+}
+
+.item-image{
+    height: 565px;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.item-description{
+    height: 565px;
+    width: 100%;
+    background-color: rgb(163, 52, 0);
+}
