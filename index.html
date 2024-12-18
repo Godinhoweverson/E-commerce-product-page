@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | E-commerce product page</title>
@@ -11,7 +13,26 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+  <!-- Mobile nav Actived -->
+  <nav>
+    <div class="nav-content">
+      <div class="icon-close" id="icon-close">
+        <img src="/images/icon-close.svg" alt="icon-close">
+      </div>
+      <ul>
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="empty"></div>
+  </nav>
 <header>
+  <div class="icon-open" id="icon-open">
+    <img src="/images/icon-menu.svg" alt="icon menu">
+  </div>
   <div class="brand-name">
     <img src="/images/logo.svg" alt="logo">
   </div>
@@ -24,7 +45,8 @@
       <li>Contact</li>
     </ul>
   </div>
- 
+
+
   <div class="customer-details">
     <div class="cart" id="cart">
       <img src="/images/icon-cart.svg" alt="cart">
@@ -34,6 +56,8 @@
     </div>
   </div>
 </header>
+
+
 <main>
   <section class="item-image" id="item-image">
   </section>
