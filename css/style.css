@@ -88,7 +88,7 @@ li::after{
 }
 li:hover:after{
     width:100%;
-    
+    color: var(--Dark-grayish-blue);
 }
 
 .customer-details{
@@ -105,14 +105,14 @@ li:hover:after{
 }
 
 .cart img{
-    width: 22px;
-    height: 20px;
+    width: 1.3rem;
+    height:  1.3rem;
 }
 
 .profile-img img{
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 3.1rem;
+    height:3.1rem;
     cursor: pointer;
 }
 .profile-img img:hover{
@@ -161,8 +161,14 @@ main{
     height: 100%;
     width: 20%;
     border-radius: 10px;
+    cursor: pointer;
 }
 
+
+.toggle-images img:hover{
+    border: 2px solid var(--Orange);
+    opacity: 65%;
+}
 .item-description{
     display: flex;
     justify-content: space-between;
@@ -174,21 +180,21 @@ main{
 }
 
 .company-name{
-    font-size: 16;
+    font-size: 1rem;
     font-weight: bold;
     color: var(--Dark-grayish-blue);
     margin-bottom: 2rem;
 }
 
 h1{
-    font-size: 44px;
+    font-size: 3rem;
     font-weight: bold;
     color: var(--Very-dark-blue);
     margin-bottom: 2rem;
 }
 
 .product-description{
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 2rem;
     line-height: 26px;
 }
@@ -200,15 +206,36 @@ h1{
     flex-direction: column;
     height: 4rem;
     margin-bottom: 2.5rem;
-    width: 33%;
+    width: 100%;
 }
 
 .price-plus-discount{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     flex-direction: row;
-    width: 100%;
+}
+
+.price-plus-discount h2{
+  color: var(--Very-dark-blue);
+  font-size: 1.8rem;
+  font-weight: bold;
+ }
+
+.price-plus-discount p{
+   background-color: var(--Very-dark-blue);;
+   color: var(--White);
+   padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+   border-radius: 8px;
+   margin-left: 1.5rem;
+
+}
+
+.price-total{
+    font-size: 1rem;
+    color: var(--Dark-grayish-blue);
+    text-decoration: line-through;
+    font-weight: bold;
 }
 
 .add-products{
@@ -219,16 +246,73 @@ h1{
     width: 100%;
 }
 
-@media screen and (max-width: 800px){
+.increment-decrement-products{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 35%;
+    height: 100%;
+    background-color: var(--Light-grayish-blue);
+    border-radius: 10px;
+}
+
+.increment-decrement-products img{
+    cursor: pointer;
+}
+
+.add-cart{
+    width: 61%;
+    height: 100%;
+    background-color: var(--Orange);
+    color: var(--Very-dark-blue);
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.add-cart:hover{
+    background-color: var(--Pale-orange);
+}
+
+.add-cart img{
+    width: 1rem;
+    height: 1rem;
+    padding-right:1rem;
+}
+
+@media screen and (max-width: 1020px){
     header{
-        justify-content: space-around;
+        height: 56px;
+        justify-content: space-between;
+    }
+
+    .icon-open{
+        display: flex;
+        width: 6%;
     }
     .brand-name {
-        width: 40%;
+        width: 50%;
+    }
+    .customer-details{
+        width: 30%;
     }
     .pages{
        display: none;
        position: relative;
+    }
+
+    .cart{
+        margin-right:1rem;
+    }
+    
+    .cart img{
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    
+    .profile-img img{
+        width: 2rem;
+        height: 2rem;
     }
 
     nav{
@@ -270,5 +354,63 @@ h1{
         width: 30%;
         background-color:var(--Black);
         opacity: 75%;
+    }
+
+    main, .description{
+        flex-direction: column;
+        width:77%;
+        padding: 0;
+        border: 0;
+    }
+    main{
+        margin-bottom: 5rem;
+    }
+
+    .item-image{
+        width: 100%;
+    }
+
+    .product-img, .product-img img{
+        border-radius: 0;
+    }
+    .toggle-images{
+        display: none;
+    }
+    .item-description{
+        width: 100%;
+        padding: 0;
+    }
+
+    .company-name{
+        font-size: 0.8rem;
+
+    }
+    
+    h1{
+        font-size: 1.5rem;
+    }
+
+    .product-price{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .add-products{
+        flex-direction: column;
+    }
+
+    .add-products{
+        height: 132px;
+        width: 100%;
+    }
+    .increment-decrement-products{
+        height: 45%;
+        width: 100%;
+    }
+
+    .add-cart{
+        box-shadow: 1px 1px 20px rgb(10, 11, 0);
+        height: 45%;
+        width: 100%;
     }
 }
