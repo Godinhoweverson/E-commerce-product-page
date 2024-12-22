@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.slideShow{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+.content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 550px;
+    height: 722px;
+}
+
+.close-icon{
+    height: 10%;
+}
+
+.displayImg{
+ height: 76%;
+ width: 100%;
+}
+
+.displayImg img{
+    height: 100%;
+    width: 100%;
+}
+
+.toggle-images{
+    height: 12%;
+    width: 100%;
+}

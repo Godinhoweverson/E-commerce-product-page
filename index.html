@@ -6,11 +6,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/slideShow.css">
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | E-commerce product page</title>
 
-  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <!-- Mobile nav Actived -->
@@ -56,6 +57,23 @@
     </div>
   </div>
 </header>
+<!-- SLIDE IMAGES -->
+<section class="slideShow" id="slideShow">
+  <div class="content">
+    <div class="close-icon"></div>
+    <div class="displayImg">
+      <button class="previous-btn" id="previous-btn"></button>
+      <img src="/images/image-product-1.jpg" alt="product">
+      <button class="next-btn" id="next-btn"></button>
+    </div>
+    <div class="toggle-images">
+      <img src="/images/image-product-1-thumbnail.jpg" alt="product-1">
+      <img src="/images/image-product-2-thumbnail.jpg" alt="product-2">
+      <img src="/images/image-product-3-thumbnail.jpg" alt="product-3">
+      <img src="/images/image-product-4-thumbnail.jpg" alt="product-4">
+    </div>
+  </div>
+</section>
 <main>
   <section class="item-image" id="item-image">
     <div class="product-img">
