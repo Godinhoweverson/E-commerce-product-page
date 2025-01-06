@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/slideShow.css">
+  <link rel="stylesheet" href="/css/popUp.css">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -46,8 +47,6 @@
       <li>Contact</li>
     </ul>
   </div>
-
-
   <div class="customer-details">
     <div class="cart" id="cart">
       <img src="/images/icon-cart.svg" alt="cart">
@@ -80,11 +79,26 @@
     </div>
   </div>
 </section>
+<!-- Pop up window -->
+ <section class="pop-up" id="pop-up">
+  <div class="cart">
+    <p>Cart</p>
+  </div>
+  <div class="product-cart" id="product-cart">
+    <p>Your cart is empty.</p>
+  </div>
+ </section>
 <main>
   <section class="item-image" id="item-image">
+    <button  class="btn-toggle-mobile" id="previous-btn-mobile">
+      <img src="/images/icon-previous.svg" alt="">
+    </button>
     <div class="product-img">
       <img src="/images/image-product-1.jpg" alt="product">
     </div>
+    <button class="btn-toggle-mobile" id="next-btn-mobile"> 
+      <img src="/images/icon-next.svg" alt="">
+    </button>
     <div class="toggle-images">
       <img src="/images/image-product-1-thumbnail.jpg" alt="product-1">
       <img src="/images/image-product-2-thumbnail.jpg" alt="product-2">
