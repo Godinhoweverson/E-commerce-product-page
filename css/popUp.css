@@ -17,13 +17,13 @@ body{
     padding: 2rem;
 }
 
-.cart{
+.cart-popUp{
     width: 100%;
     height: 15%;
     text-align: left top;
 }
 
-.cart p, .product-cart p{
+.cart-popUp p, .product-cart p{
     font-size: 1rem;
     font-weight: bold;
 }
