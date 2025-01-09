@@ -70,10 +70,26 @@
     height: 16px;
 }
 
-
-
-/* When click to display the image in full size */
-.toggle-images{
+.toggle-images-display{
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+    border-radius: 10px;
     padding-top: 3.3rem;
     width: 82% !important;
+}
+
+
+.toggle-images-display img{
+    height: 100%;
+    width: 20%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.toggle-images-display img:hover{
+    border: 2px solid var(--Orange);
+    opacity: 65%;
 }
