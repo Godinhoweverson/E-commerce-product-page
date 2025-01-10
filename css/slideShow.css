@@ -93,3 +93,8 @@
     border: 2px solid var(--Orange);
     opacity: 65%;
 }
+
+.active-style{
+    border: 2px solid var(--Orange); 
+    opacity:65%;
+}
