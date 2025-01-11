@@ -51,7 +51,7 @@
     <div class="cart" id="cart">
       <img src="/images/icon-cart.svg" alt="cart">
     </div>
-    <div class="profile-img">
+    <div class="profile-img" id="profile-img">
       <img src="/images/image-avatar.png" alt="">
     </div>
   </div>
@@ -85,7 +85,6 @@
     <p>Cart</p>
   </div>
   <div class="product-cart" id="product-cart">
-    <p>Your cart is empty.</p>
   </div>
  </section>
 <main>
@@ -115,7 +114,7 @@
   </p>
   <div class="product-price">
     <div class="price-plus-discount">
-        <h2>$125.00</h2>
+        <h2>$<span id="price">125.00</span></h2>
         <p>50%</p>
     </div>
     <div class="price-total"> 
@@ -124,9 +123,13 @@
   </div>
   <div class="add-products">
     <div class="increment-decrement-products">
-      <img src="/images/icon-minus.svg" alt="icon minus">
-      <p>0</p>
-      <img src="/images/icon-plus.svg" alt="icon plus">
+      <button id="decrement"> 
+        <img src="/images/icon-minus.svg" alt="icon minus">
+      </button>
+      <span id="count">0</span>
+      <button id="increment">
+        <img src="/images/icon-plus.svg" alt="icon plus">
+      </button>
     </div>
     <button class="add-cart" id="add-cart">
       <img src="/images/icon-cart-btn.svg" alt="cart">
