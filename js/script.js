@@ -65,8 +65,38 @@ handleProductQuantity();
 
 
 const displayCartContent = (totalPrice, price, quantity)=>{
-    const contentCart = document.createElement(div);
-    
+   const contentCart = document.createElement('div');
+   contentCart.classList = 'contentCartActivated';
+   productCart.appendChild(contentCart); 
+
+   const imageCart = document.createElement('img');
+   imageCart.src = './images/image-product-1-thumbnail.jpg';
+   imageCart.classList = 'imageCartActivated';
+   contentCart.appendChild(imageCart);
+
+   const productDetailsCart = document.createElement('div');
+   productDetailsCart.classList = 'productDetailsCartActivated';
+
+ 
+   const productHeading = document.createElement('p');
+   productHeading.innerHTML = 'Fall Limited Edition Sneakers';
+   productDetailsCart.appendChild(productHeading);
+   
+   const priceAndQuantity = document.createElement('p');
+   priceAndQuantity.innerHTML = `${price} x${quantity} $${totalPrice}`
+   productDetailsCart.appendChild(priceAndQuantity);
+
+   contentCart.appendChild(productDetailsCart);
+
+   const deleteCart = document.createElement('img');
+   deleteCart.src = './images/icon-delete.svg';
+   deleteCart.classList = 'deleteCartActivated';
+   contentCart.appendChild(deleteCart);
+
+   const btnCart = document.createElement('btn');
+   btnCart.innerHTML = 'Checkout';
+    btnCart.classList = 'add-cart';
+    productCart.appendChild(btnCart);
 }
 
 // HANDLE PRODUCT IMAGES
@@ -143,7 +173,7 @@ toggleImages();
 
 const toggleMobile = () => {
 
-    let nextOrprevious = false;
+    let nextOrprevious;
     let index = Number(productImg.children[0].src.split('-').pop().split('.')[0]);
 
     nextBtnMobile.addEventListener('click', ()=>{
