@@ -242,6 +242,7 @@ function handleResize() {
         toggleMobile()
     } else {
         displayProduct();
+        navbar.style.display = 'none';
     }
 }
 
